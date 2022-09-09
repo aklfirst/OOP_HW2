@@ -1,2 +1,8 @@
-package PACKAGE_NAME;public class ServiceStation {
+public interface ServiceStation {
+    void check(Car[] cars);
+
+    void check(Truck[] trucks);
+
+    void check(Bicycle[] bicycles);
+
 }
