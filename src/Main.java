@@ -23,12 +23,12 @@ public class Main {
             vehicles [i + cars.length + trucks.length] = bicycles[i];
         }
 
-        ServiceStation serviceStationByType = new ServiceStationByType();
-        serviceStationByType.check(cars);
-        serviceStationByType.check(trucks);
-
         ServiceStation serviceStationAllVehicles = new ServiceStationAllVehicles();
-        performServiceAllVehicles(serviceStationAllVehicles,cars,trucks,bicycles);
+        serviceStationAllVehicles.check(cars);
+        serviceStationAllVehicles.check(trucks);
+        serviceStationAllVehicles.check(bicycles);
+
+       // performServiceAllVehicles(serviceStationAllVehicles,cars,trucks,bicycles);
 
 
     }
