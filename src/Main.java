@@ -14,31 +14,24 @@ public class Main {
 
         Vehicle[] vehicles = new Vehicle[cars.length + trucks.length + bicycles.length];
         for (int i = 0; i < cars.length; i++) {
-            vehicles [i] = cars[i];
+            vehicles[i] = cars[i];
         }
         for (int i = 0; i < trucks.length; i++) {
             vehicles[i + cars.length] = trucks[i];
         }
         for (int i = 0; i < bicycles.length; i++) {
-            vehicles [i + cars.length + trucks.length] = bicycles[i];
+            vehicles[i + cars.length + trucks.length] = bicycles[i];
         }
 
-        ServiceStation serviceStationAllVehicles = new ServiceStationAllVehicles();
+        ServiceStationAllVehicles serviceStationAllVehicles = new ServiceStationAllVehicles();
         serviceStationAllVehicles.check(cars);
         serviceStationAllVehicles.check(trucks);
         serviceStationAllVehicles.check(bicycles);
 
-       // performServiceAllVehicles(serviceStationAllVehicles,cars,trucks,bicycles);
 
 
     }
 
-    private static void performServiceAllVehicles (ServiceStation serviceStation, Car [] cars, Truck [] trucks, Bicycle [] bicycles){
-        serviceStation.check(cars);
-        serviceStation.check(trucks);
-        serviceStation.check(bicycles);
-
-    }
 
 
     }

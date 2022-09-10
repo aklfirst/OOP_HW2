@@ -1,4 +1,4 @@
-public class Vehicle {
+public abstract class Vehicle {
 
     private String modelName;
     private int wheelsCount;
@@ -7,6 +7,8 @@ public class Vehicle {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
+
+    public abstract void transportService(Vehicle [] vehicles);
 
     public String getModelName() {
         return modelName;
@@ -23,5 +25,6 @@ public class Vehicle {
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
+
 
 }
