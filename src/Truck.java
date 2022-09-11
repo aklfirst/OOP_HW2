@@ -6,15 +6,24 @@ public class Truck extends Vehicle {
         }
 
       @Override
-    public void transportService(Vehicle[] trucks) {
-        System.out.println("По грузовикам: ");
-        for (int i = 0; i < trucks.length; i++) {
-            System.out.println("Обслуживаем " + trucks[i].getModelName() + ", меняем покрышек: " + trucks[i].getWheelsCount());
-        }
-        System.out.println("Проверяем двигатель");
-        System.out.println("Проверяем прицеп");
-        System.out.println();
+      public void transportService() {
+          checkTyres();
+          checkEngine();
+          checkTrailer();
+      }
+
+    public void checkTyres () {
+        System.out.println("По легковым авто: Обслуживаем " + getModelName() + ", меняем покрышек: " + getWheelsCount());
     }
+
+    public void checkEngine () {
+        System.out.println("Проверяем двигатель");
+    }
+
+    public void checkTrailer () {
+        System.out.println("Проверяем прицеп");
+    }
+
 
 }
 

@@ -6,16 +6,18 @@ public class Car extends Vehicle {
 
 
     @Override
-    public void transportService(Vehicle[] cars) {
-        System.out.println("По легковым авто: ");
-        for (int i = 0; i < cars.length; i++) {
-            System.out.println("Обслуживаем " + cars[i].getModelName() + ", меняем покрышек: " + cars[i].getWheelsCount());
-        }
-        System.out.println("Проверяем двигатель");
-        System.out.println();
+    public void transportService() {
+        checkTyres();
+        checkEngine();
     }
 
+    public void checkTyres () {
+        System.out.println("По легковым авто: Обслуживаем " + getModelName() + ", меняем покрышек: " + getWheelsCount());
+    }
 
+    public void checkEngine () {
+        System.out.println("Проверяем двигатель");
+        }
 
 }
 

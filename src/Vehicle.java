@@ -8,7 +8,7 @@ public abstract class Vehicle {
         this.wheelsCount = wheelsCount;
     }
 
-    public abstract void transportService(Vehicle [] vehicles);
+    public abstract void transportService();
 
     public String getModelName() {
         return modelName;
