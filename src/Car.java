@@ -11,13 +11,14 @@ public class Car extends Vehicle {
         checkEngine();
     }
 
-    public void checkTyres () {
+    public void checkTyres() {
         System.out.println("По легковым авто: Обслуживаем " + getModelName() + ", меняем покрышек: " + getWheelsCount());
     }
 
-    public void checkEngine () {
+    public void checkEngine() {
         System.out.println("Проверяем двигатель");
-        }
+    }
+
 
 }
 

@@ -26,5 +26,4 @@ public abstract class Vehicle {
         this.wheelsCount = wheelsCount;
     }
 
-
 }
